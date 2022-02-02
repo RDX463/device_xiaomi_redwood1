@@ -76,6 +76,7 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio configs
+vendor/etc/audio/sku_yupik/audio_effects.conf
 vendor/etc/audio/sku_yupik/audio_platform_info_yupikidp.xml
 vendor/etc/audio/sku_yupik/mixer_paths_yupikidp.xml
 vendor/etc/audio/sku_yupik/mixer_paths_overlay_dynamic.xml
