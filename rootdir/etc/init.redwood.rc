@@ -1,0 +1,23 @@
+#
+# Copyright (C) 2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on boot && property:ro.boot.hwc=CN
+    setprop bluetooth.device.default_name "Redmi Note 12 Pro Speed"
+
+on boot && property:ro.boot.hwc=GL
+    setprop bluetooth.device.default_name "Poco X5 Pro 5G"
+
+on boot && property:ro.boot.hwc=IN
+    setprop bluetooth.device.default_name "Poco X5 Pro 5G"
+    
+    
+on property:vendor.post_boot.parsed=1
+
+     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+     chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
+ 
+     chown system system /sys/class/power_supply/battery/temp
+     chmod 0660 /sys/class/power_supply/battery/temp
