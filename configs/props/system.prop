@@ -124,3 +124,10 @@ persist.log.tag.minksocket=S
 
 # Userfaultfd GC
 ro.dalvik.vm.enable_uffd_gc=True
+
+# Add these as PRODUCT_SYSTEM_PROPERTIES 
+ro.product.marketname=POCO X5 PRO 5G
+ro.infinity.soc=Snapdragon 778G
+ro.infinity.battery=5000 mAh
+ro.infinity.display=2400 x 1080, 120 Hz
+ro.infinity.camera=108MP + 8MP + 2MP
