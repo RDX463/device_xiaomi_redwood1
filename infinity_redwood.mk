@@ -11,7 +11,7 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Pribuilt kernel true/false
-PREBUILT_KERNEL := true
+PREBUILT_KERNEL := false
 
 # Maintainer Name
 INFINITY_MAINTAINER := "RDX463"
