@@ -1313,6 +1313,7 @@ vendor/bin/pd-mapper
 vendor/bin/port-bridge
 vendor/bin/qti
 vendor/bin/rmt_storage
+vendor/bin/shsusrd
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/bin/tftp_server
@@ -1324,6 +1325,7 @@ vendor/etc/init/init-qcril-data.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrilNrd.rc
+vendor/etc/init/shsusrd.rc
 vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
