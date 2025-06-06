@@ -1184,10 +1184,10 @@ system/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
 system/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
 system/etc/permissions/vendor.xiaomi.hardware.misys-V4.0-java-permission.xml
 system/etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml
-system/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
-system/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
-system/framework/vendor.xiaomi.hardware.misys-V4.0-java.jar
-system/framework/vendor.xiaomi.hardware.misys.V3_0.jar
+system/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar;BOOT_JAR
+system/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar;BOOT_JAR
+system/framework/vendor.xiaomi.hardware.misys-V4.0-java.jar;BOOT_JAR
+system/framework/vendor.xiaomi.hardware.misys.V3_0.jar;BOOT_JAR
 system/lib64/libmisys_jni.xiaomi.so
 system/lib64/vendor.xiaomi.hardware.misys@1.0.so
 system/lib64/vendor.xiaomi.hardware.misys@2.0.so
