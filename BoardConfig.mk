@@ -77,7 +77,7 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/hidl/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml \
+    vendor/infinity/config/device_framework_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
@@ -153,17 +153,8 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113254576128
 
-ifeq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 104857600
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 104857600
-else
-BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1887436800
-BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1887436800
-endif
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 104857600
-BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 104857600
+# Partitions - reserved sizeAdd commentMore actions
+-include vendor/infinity/config/BoardConfigReservedSize.mk
 
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
