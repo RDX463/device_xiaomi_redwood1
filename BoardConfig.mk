@@ -131,7 +131,6 @@ else
 TARGET_KERNEL_SOURCE := kernel/xiaomi/redwood
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config vendor/xiaomi_QGKI.config
 TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
-endif
 
 # Kernel modulesAdd commentMore actions
 BOOT_KERNEL_MODULES := \
@@ -139,6 +138,7 @@ BOOT_KERNEL_MODULES := \
     goodix_core.ko \
     xiaomi_touch.ko
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+endif
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
