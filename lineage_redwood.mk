@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Pribuilt kernel true/false
 PREBUILT_KERNEL := false
@@ -16,12 +16,7 @@ PREBUILT_KERNEL := false
 # Gapps
 WITH_GMS := true
 
-# TPP OFFICIAL
-CUSTOM_BUILD_TYPE := OFFICIAL
-CUSTOM_MAINTAINER := Thereache
-
 # Device props
-TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
@@ -32,7 +27,7 @@ PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 22101320G
-PRODUCT_NAME := aosp_redwood
+PRODUCT_NAME := lineage_redwood
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -44,3 +39,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/redwood_global/redwood:14/UKQ1.240624.001/OS2.0.3.0.UMSMIXM:user/release-keys \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
+
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 108,8,2
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 16
+# Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
+AXION_MAINTAINER := Mayur_U 
+# Processor name (use "_" for spaces)
+AXION_PROCESSOR := Qualcomm_Snapdragon_778G_5G
