@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_redwood.mk
+    $(LOCAL_DIR)/yaap_redwood.mk

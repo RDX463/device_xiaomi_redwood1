@@ -8,6 +8,8 @@ DEVICE_PATH := device/xiaomi/redwood
 
 BOARD_VENDOR := xiaomi
 
+TARGET_PROVIDES_POWERHAL := true
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
@@ -77,7 +79,7 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/hidl/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/infinity/config/device_framework_matrix.xml \
+    vendor/yaap/config/device_framework_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
@@ -166,15 +168,12 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113254576128
 
 # Partitions - reserved size
--include vendor/infinity/config/BoardConfigReservedSize.mk
+-include vendor/yaap/config/BoardConfigReservedSize.mk
 
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
-
-# Platform
-TARGET_BOARD_PLATFORM := lahaina
 
 # Properties
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true

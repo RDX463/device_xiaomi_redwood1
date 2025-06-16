@@ -8,18 +8,13 @@
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Pribuilt kernel true/false
-PREBUILT_KERNEL := false
-
-# Maintainer Name
-INFINITY_MAINTAINER := "RDX463"
+PREBUILT_KERNEL := true
 
 # Gapps
-WITH_GAPPS := true
-
-INFINITY_BUILD_TYPE := OFFICIAL
+WITH_GMS := true
 
 # Device props
 TARGET_SUPPORTS_BLUR := true
@@ -28,12 +23,13 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_OMX_SERVICE := false
+TARGET_PROVIDES_POWERHAL := true
 
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 22101320G
-PRODUCT_NAME := infinity_redwood
+PRODUCT_NAME := yaap_redwood
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
