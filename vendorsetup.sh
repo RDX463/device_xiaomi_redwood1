@@ -1,4 +1,4 @@
-git clone https://github.com/Redwood-trees/proprietary_vendor_xiaomi_redwood vendor/xiaomi/redwood
+git clone https://github.com/Mayur-U/vendor-xiaomi-redwood-latest.git vendor/xiaomi/redwood
 
 git clone https://github.com/Redwood-trees/vendor_xiaomi_redwood-miuicamera.git vendor/xiaomi/redwood-miuicamera
 
