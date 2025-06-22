@@ -6,7 +6,7 @@ git clone https://github.com/Redwood-trees/android_hardware_xiaomi hardware/xiao
 
 #git clone https://github.com/Atom-X-Devs/scarlet_xiaomi_sm7325.git kernel/xiaomi/redwood
 
-git clone https://github.com/Mayur-U/hardware_dolby.git -b sony-1.1 hardware/dolby
+git clone https://github.com/Mayur-U/hardware_dolby.git -b sony-1.3 hardware/dolby
 
 git clone https://github.com/Mayur-U/vendor-lineage-priv.git vendor/lineage-priv
 
