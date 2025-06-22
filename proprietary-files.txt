@@ -547,7 +547,7 @@ vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
 vendor/lib64/libmi-stc-HW-modulate.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0_vendor.so;FIX_SONAME
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE_SUFFIX=_vendor
 
 # Graphics firmware
 vendor/firmware/a660_gmu.bin
