@@ -40,24 +40,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-# Define rear camera specs (multiple sensors supported)
-AXION_CAMERA_REAR_INFO := 108,8,2
-# Define front camera specs
-AXION_CAMERA_FRONT_INFO := 16
-# Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
-AXION_MAINTAINER := Mayur_U 
-# Processor name (use "_" for spaces)
-AXION_PROCESSOR := Qualcomm_Snapdragon_778G_5G
-
-AXION_CPU_SMALL_CORES := 0,1,2,3
-AXION_CPU_BIG_CORES := 4,5,6,7
-AXION_CPU_BG := 0-2
-AXION_CPU_FG ?= 0-7
-AXION_CPU_LIMIT_BG := 0-1
-AXION_CPU_UNLIMIT_UI ?= 0-7
-AXION_CPU_LIMIT_UI ?= 0-4
-AXION_CPU_DISPLAY ?= 4-7
-AXION_CPU_AUDIO ?= 0-3
-
-AXION_DEBUGGING_ENABLED := true
-
